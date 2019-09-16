@@ -1,6 +1,12 @@
 # Litmus
 
-Litmus can be used to determine which one of many options are perfectly matched for your particular request object.
+Litmus can be used to determine which one of many options are perfectly matched for your particular condition.
+
+An **Option** is formed with two parts.
+
+1. First, **Selector** that holds some rules which must be true for this Option.
+	
+2. Second, **Resolver** that holds pre-defined knowledge about this Option. 
 
 Lets say, we have multiple options to select from. According to different conditions, one option will be selected.
 
@@ -11,8 +17,7 @@ Option {
 }
 ```
 
-This `Selector` will hold those conditions accountable for this `Option`.
-If we pass our specific scenario, `Litmus` will select the perfectly matched option.
+If we pass our specific scenario, `Litmus` will select the perfectly matched Option.
 
 Litmus process is done by some `Checker` methods those are used to check conditions.
 
