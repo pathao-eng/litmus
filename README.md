@@ -1,6 +1,20 @@
 # Litmus
 
-Litmus can be used to determine which one of many options are perfectly matched for your particular condition.
+Litmus is a coloring compound that under goes a color changes when added to an acid or base. If we have lots of solution either acid or base, we have no problem to find out which one is acid with litmus. Litmus paper is treated with natural dyes that reacts with acid/base to change color. 
+
+Imagine a ***litmus*** paper that can identify numbers of solution. Instead of natural dyes, this ***litmus*** is treated with variety of indicators. Each combination of indicators reacts with a particular solution to make color.
+
+Now, lets relate this imaginary ***litmus*** with our concerned **Litmus**.
+
+First, we need to treat our **Litmus** with different indicators. This indicators are called here **Request** object.
+
+Second, each solution (**Option**) is a mixture of multiple compounds. These compounds are called **Selector**. 
+
+Third, instead of color, after **Litmus** test, solution will return a set of identifier. This set is called here **Resolver**.
+
+That means, when we are testing each **Option** with **Request** object, if this object returns true for all **Selector** compounds, **Litmus** will return **Resolver** like color in litmus paper
+
+Now main points are like:
 
 An **Option** is formed with two parts.
 
@@ -8,7 +22,7 @@ An **Option** is formed with two parts.
 	
 2. Second, **Resolver** that holds pre-defined knowledge about this Option. 
 
-Lets say, we have multiple options to select from. According to different conditions, one option will be selected.
+Lets say, we have multiple options to select from. According to different conditions, one option will be selected based on it's rules.
 
 ```
 Option {
@@ -17,7 +31,8 @@ Option {
 }
 ```
 
-If we pass our specific scenario, `Litmus` will select the perfectly matched Option.
+To check with Litmus, we need another object called **Request**. This Request object holds all conditions which are used to filter Options.
+
 
 Litmus process is done by some `Checker` methods those are used to check conditions.
 
