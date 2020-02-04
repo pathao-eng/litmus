@@ -197,7 +197,7 @@ This requires `StartTime` & `EndTime` to have `DateMap` meta converter. And also
 ```go
 package main
 import (
-	"github.com/aerokite/litmus"
+	"github.com/pathao-eng/litmus"
 )
 
 type Option struct {
