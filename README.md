@@ -1,5 +1,9 @@
 # Litmus
 
+<p align="center">
+  <img alt="litmus"  src="/docs/images/banner.png">
+</p>
+
 Litmus is a coloring compound that under goes a color changes when added to an acid or base. If we have lots of solution either acid or base, we have no problem to find out which one is acid with litmus. Litmus paper is treated with natural dyes that reacts with acid/base to change color. 
 
 Imagine a ***litmus*** paper that can identify numbers of solution. Instead of natural dyes, this ***litmus*** is treated with variety of indicators. Each combination of indicators reacts with a particular solution to make color.
